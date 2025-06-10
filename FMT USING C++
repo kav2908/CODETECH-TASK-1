@@ -1,0 +1,28 @@
+#include <iostream>
+#include <fstream>
+#include <string>
+
+int main() {
+    // Write to a file
+    std::ofstream outputFile("my_file.txt");
+    if (outputFile.is_open()) {
+        outputFile << "This is a line of text." << std::endl;
+        outputFile << "Another line." << std::endl;
+        outputFile.close();
+    } else {
+        std::cerr << "Error opening file for writing." << std::endl;
+    }
+
+    // Read from a file
+    std::ifstream inputFile("my_file.txt");
+    if (inputFile.is_open()) {
+        std::string line;
+        while (std::getline(inputFile, line)) {
+            std::cout << line << std::endl;
+        }
+        inputFile.close();
+    } else {
+        std::cerr << "Error opening file for reading." << std::endl;
+    }
+    return 0;
+}
