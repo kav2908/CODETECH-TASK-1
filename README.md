@@ -29,7 +29,8 @@ File Created:
 The code also creates a file named "example.txt" in the same directory as the executable, containing the text:
 Hello, this is a test file.
 
-The program successfully writes to and reads from the file, demonstrating basic file input/output operations in C++
+The program successfully writes to and reads from the file, demonstrating basic file input/output operations in C++![Uploading image.png…]()
+
 
 
 
